@@ -20,10 +20,6 @@ public class Cachorro {
         System.out.printf("%s: Está dormindo!\n", nome);
     }
 
-
-    // Construtor de Classe padrão
-    public Cachorro() {}
-
     // Construtor com argumentos
     public Cachorro(String pNome, int pIdade, String pRaca) {
         nome = pNome;
