@@ -24,16 +24,31 @@
 
 ```mermaid
 classDiagram
-    
-    class Cachorro {
+
+    class Animal {
         String raca
         String nome
         Integer idade
-        
-        void latir()
+
+        void emitirSom()
         void dormir()
         void comer()
-        void vazerXixiNoPoste()
-        
     }
+
+    class Aguia { }
+    class Cachorro { }
+    class Gato { }
+    class Mamifero { 
+        +patrulhar()
+    }
+    class Ave {
+        +voar()
+    }
+    
+    
+    Animal <|-- Mamifero
+    Animal <|-- Ave
+    Mamifero <|-- Cachorro
+    Mamifero <|-- Gato
+    Ave <|-- Aguia
 ```

@@ -1,40 +1,17 @@
 package model;
 
-public class Cachorro {
-    // Atributos: modificador Tipo identificador
-    public String nome;
-    public int idade;
-    public String raca;
-
-    // Comportamentos
-    public void latir() {
-        System.out.printf("%s: Au au!\n", nome);
+public class Cachorro extends Mamifero {
+    public Cachorro(String nome, int idade, String raca) {
+        super(nome, idade, raca);
     }
 
-    public  void comer() {
-        System.out.printf("%s: Está comento!\n", nome);
-
-    }
-
-    public void dormir() {
-        System.out.printf("%s: Está dormindo!\n", nome);
-    }
-
-    // Construtor com argumentos
-    public Cachorro(String pNome, int pIdade, String pRaca) {
-        nome = pNome;
-        idade = pIdade;
-        raca = pRaca;
-    }
-
-    // Representação textual da classe
     @Override
-    public String toString() {
-        return "Cachorro{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", raca='" + raca + '\'' +
-                '}';
+    public void patrulhar() {
+        System.out.println("O cachorro está patrulhando!");
+    }
+
+    public void emitirSom() {
+        System.out.println("Au Au!");
     }
 }
 
