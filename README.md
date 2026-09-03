@@ -66,9 +66,14 @@ classDiagram
         +emitirSom() void
         +voar() void
     }
-    class Oritorrinco { }
+    
+   class Ornitorrinco { }
 
    class Morcego { }
+   
+  class Pinguin { }
+   
+   class Pinguin {}
 
     Animal <|-- Mamifero
     Animal <|-- Ave
@@ -101,6 +106,7 @@ classDiagram
     confirme que todas as relações de herança foram implementadas.
 11. O Orinitorrinco é um mamífero que bota ovos. Crie a classe `Orinitorrinco` como uma especialização de `Mamifero`. Implemente os métodos abstratos herdados e adicione um método específico chamado `botarOvo()`.
 12. O Morcego é um mamífero que voa. Crie a classe `Morcego` como uma especialização de `Mamifero`. Implemente os métodos abstratos herdados e adicione um método específico chamado `voar()`.
+13. O pinguin é uma ave que não voa. Crie a classe `Pinguin` como uma especialização de `Ave`. Implemente os métodos abstratos herdados e adicione um método específico chamado `patrulhar()`.
 
 As classes `Aluno` e `Tutor` não fazem parte dessa hierarquia, pois representam
 outros conceitos do sistema.
